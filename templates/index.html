@@ -1,0 +1,63 @@
+$def with (now)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../static/style/main.css">  
+  <script src="../static/script/weather.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div>
+        <ul class="nav nav-tabs">
+          <li><a href="#weather" data-toggle="tab">Weather</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clocks <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#sever" data-toggle="tab">Server Time</a></li>
+              <li><a href="#local" data-toggle="tab">Local Time</a></li>                    
+            </ul>
+          </li>
+          <li><a href="#performance" data-toggle="tab">Performance</a></li>
+        </ul>
+        <div class="tab-content" id="tabs">
+          <div class="tab-pane content-area centered" id="weather">            
+              <div class="btn-group">
+                <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" href="#">Select a Country <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">New York</a></li>
+                  <li><a href="#">London</a></li>
+                  <li><a href="#paris">Paris</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" id="btnWeather" class="btn btn-primary">Get Wind</button>
+              </div>
+              <div class ="output"></div>  
+          </div>
+          <div class="tab-pane content-area centered" id="sever">...Server...</div>
+          <div class="tab-pane content-area centered output" id="local">
+            <p>LOCAL TIME:</p><br>
+            <p>$now</p>
+          </div>
+          <div class="tab-pane content-area centered" id="performance">...Performance...</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="navbar navbar-fixed-bottom animate-me">
+    <div class="container">
+      <p class="navbar-text"><b>Bootstrap Footer Content</b></p> 
+  </div>
+</body>
+</html>

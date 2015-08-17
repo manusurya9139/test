@@ -1,0 +1,49 @@
+     .animate-me {
+     -webkit-animation: bgcolorchange 20s infinite; /* Chrome, Safari, Opera */ 
+     animation: 20s infinite bgcolorchange;
+     }
+     
+    @keyframes bgcolorchange {
+      0% {
+        background-color: white;
+      }
+      25% {
+        background-color: blue;
+      }
+      50% {
+        background-color: yellow;
+      }
+      75% {
+        background-color: green;
+      }
+    }
+
+    /* Chrome, Safari, Opera */
+     @-webkit-keyframes bgcolorchange {
+          0%   {background: white;}
+          25%  {background: blue;}
+          50%  {background: yellow;}
+          100% {background: green;}
+     }
+  
+    .content-area {
+      width:400px;
+      height: 200px;
+      border: 1px solid blue;
+      margin: 0;
+    }
+
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .output{
+      font-family: serif;
+      font-size: 20px;
+      font: bold;
+      padding-left: 50px;
+      padding-top: 50px;
+    }
